@@ -2,7 +2,7 @@
 Import-Module VirusTotalAnalyzer -Force
 
 # Define API Key
-$VTApi = 'fbe6f54afc05632834d509712b6ad75e3d6e592c9fe02f97039ed3d4aa4dbf87'
+$VTApi = 'Your_VirusTotal_API_Key'
 
 # Check if API Key is set
 if (-not $VTApi) {
@@ -11,7 +11,7 @@ if (-not $VTApi) {
 }
 
 # Define the folder to scan
-$FolderPath = "C:\Users\kunal.kumar\Downloads\reports"
+$FolderPath = "PATH"
 
 # Check if folder exists
 if (-not (Test-Path -Path $FolderPath)) {
