@@ -3,15 +3,14 @@ Import-Module VirusTotalAnalyzer -Force
 
 # Define API Key
 $VTApi = 'Your_VirusTotal_API_Key'
+# Define the folder to scan
+$FolderPath = "PATH"
 
 # Check if API Key is set
 if (-not $VTApi) {
     Write-Error "API Key is not set. Please set your VirusTotal API key."
     exit
 }
-
-# Define the folder to scan
-$FolderPath = "PATH"
 
 # Check if folder exists
 if (-not (Test-Path -Path $FolderPath)) {
